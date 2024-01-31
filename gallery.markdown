@@ -12,6 +12,5 @@ order: 1
 
 {% for myimage in site.data.gallery-items %}
     {% include gallery_item.html path=myimage.filename title=myimage.title description=myimage.description %}
-    <figcaption>
 {% endfor %}
 
