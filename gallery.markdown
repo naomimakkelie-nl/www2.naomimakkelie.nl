@@ -10,12 +10,7 @@ order: 1
 
 {% assign image_files = site.static_files | where: "image", true %}
 
-{% for myimage in image_files %}
-  <figure>
-    <img src="{{ myimage.path }}" alt="{{ myimage.title }}" />
-    <figcaption>
-      <pre>{{ myimage.description }}</pre>
-    </figcaption>
-  </figure>
+{% for myimage in site.data.gallery-items %}
+    {% include gallery_item.html path=myimage.filename title=myimage.title description=myimage.description %}
 {% endfor %}
 
