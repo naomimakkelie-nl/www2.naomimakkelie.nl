@@ -55,7 +55,7 @@ order: 1
   </script>
 </figure>
 <figure itemscope="" itemtype="https://schema.org/Painting">
-  <img src="https://www2.naomimakkelie.nl/assets/img/valentines-battlefield.jpg" alt="Battlefield on Valentine’s Day" itemprop="image">
+  <img src="https://www2.naomimakkelie.nl/assets/img/new-image.jpg" alt="Battlefield on Valentine’s Day" itemprop="image">
 
   <figcaption>
     <pre itemprop="description" style="white-space: pre-line;">
