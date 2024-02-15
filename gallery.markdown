@@ -86,7 +86,7 @@ order: 1
       "name": "Naomi Mitsuko Makkelie"
     },
     "artworkSurface": "Paper",
-    "image": "https://github.com/naomimakkelie-nl/www2.naomimakkelie.nl/assets/62353999/47ccca17-7c11-4788-879b-e90da6921c5e"
+    "image": "https://www2.naomimakkelie.nl/assets/img/valentines-battlefield.jpg"
   }
   </script>
 </figure>
