@@ -98,6 +98,41 @@ async function sendEmail(event) {
 
     form.style.display = "none";
     h1.style.display = "block";
+<script>
+async function subscribeToNewsletter(event) {
+  event.preventDefault();
+  const form = event.target;
+  const emailInput = form.querySelector(`#newsletter-email`);
+  const url = '/api/subscribe';
+
+  const body = { email: emailInput.value };
+  console.log(body);
+
+  let res, error;
+
+  try {
+    res = await fetch(url, {
+      method: "POST", 
+      headers: {
+        "content-type": "application/json"
+      }, 
+      body: JSON.stringify(body),
+    });
+  } catch (err) {
+    error = err;
+  } finally {
+    if (!res?.ok || error) {
+      return alert(`ERROR subscribing to newsletter`);
+    }
+
+    form.reset();
+    alert(`Thank you for subscribing!`);
   }
+}
+</script>
+<form action="/api/subscribe" method="POST" onsubmit="javascript:subscribeToNewsletter(event)">
+  <input id="newsletter-email" type="email" placeholder="Enter your email to subscribe" required="required"/>
+  <button type="submit">Subscribe</button>
+</form>
 }
 </script>
